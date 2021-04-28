@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Enter a proper page title here -->
+  <title>Template | Example with all standards</title>
+
+  <!-- CSS to include bootstrap -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="/assets/decode.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+   integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+   integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+   <script src="https://code.jquery.com/jquery-3.5.1.js"
+   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <!-- required meta tags essential for seo and link sharing -->
+
+  <!-- Enter a proper description for the page in the meta description tag -->
+  <meta name="description" content="ENTER_PAGE_DESCRIPTION">
+
+  <!-- Enter a keywords for the page in tag -->
+  <meta name="Keywords" content="ENTER_KEYWORDS_HERE">
+
+  <!-- Enter Page title -->
+  <meta property="og:title" content="ENTER_PAGE_TITLE" />
+
+  <!-- Enter Page URL -->
+  <meta property="og:url" content="ENTER_PAGE_URL" />
+
+  <!-- Enter page description -->
+  <meta property="og:description" content="ENTER_PAGE_DESCRIPTION">
+
+  <!-- Enter Logo image URL for example : http://cryptonite.finstreet.in/images/cryptonitepost.png -->
+  <meta property="og:image" itemprop="image" content="ENTER_IMAGE_URL" />
+  <meta property="og:image:secure_url" itemprop="image" content="ENTER_IMAGE_URL" />
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="315">
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon location for example :  images/cropped-Fin-270x270.jpg -->
+  <link rel="icon" href="ENTER_FAVICON_LOCATION">
+
+  <!-- fontawsome  -->
+  <script src="https://kit.fontawesome.com/f368dd0adb.js" crossorigin="anonymous"></script>
+  </head>
+  <style type="text/css">
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  .btn{
+    box-shadow: 0 2px 0 #6f9a37;
+    position: relative;
+    font-size: 14px;
+    padding: 5px 20px;
+    line-height: 1.5;
+    color: white;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .header{
+      background-color: #000;
+      padding: 20px 0;
+
+  }
+  .social-profile a {
+
+    position: relative;
+    height: 32px;
+    width: 32px;
+
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: .4s;
+    padding: 10px;
+    margin-left: 10px;
+
+}
+.breaking-news-section{
+background-color: #F9F9F9;
+border: 1px solid rgb(188,188,188,0.2);
+border-right: 3px solid red;
+margin-bottom: 20px;
+overflow: hidden;
+height: 40px;
+}
+.breaking-headline {
+    clip-path: polygon(100% 0%, 85% 51%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    color: #fff;
+    background:red;
+    padding: 10px 30px 10px 15px;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 15px;
+    line-height: 19px;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+.featured-item {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+
+
+}
+.feature-tag a {
+    color:#fff;
+    font-size: 15px;
+    padding: 10px 25px;
+    background-color: red;
+    border: none;
+    line-height: 1;
+    border: 0px;
+    display: flex;
+    text-transform: capitalize;
+
+
+
+}
+.feature-tag {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+
+}
+.daily{
+  position: relative;
+}
+
+.container {
+    max-width: 1600px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.latest-post{
+    background-color: #F9F9F9;;
+    border: 1px solid rgba(188, 188, 188, 0.2);
+}
+.single-food-post.single-latest-posts {
+    padding: 8px 0;
+    margin-bottom: 0px;
+}
+.single-latest-posts {
+    position: relative;
+    counter-increment: count;
+    border-bottom: 1px solid rgba(188, 188, 188, 0.2);
+}
+.food-image img {
+    width: 140px;
+    height: 130px;
+    object-fit: cover;
+
+}
+.food-image{
+  margin-right: 15px;
+}
+.single-video {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #F9F9F9;
+    border: 1px solid rgba(188, 188, 188, 0.2);
+}
+ .update-image{
+  position: relative;
+}
+.video-content{
+  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.food-post-title {
+    flex: 1;
+    align-self: center;
+}
+.post-meta {
+    font-size: 13px;
+    line-height: 15px;
+    color: #BCBCBC;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+  </style>
+
+
+  <body>
+    <!-- desktop ui start -->
+    <div class="d-none d-lg-block">
+      <nav class="navbar sticky-top navbar-dark bg-dark">
+
+
+
+  <a class="navbar-brand" >Envato Market</a>
+
+
+  <form class="form-inline">
+
+    <button class="btn  my-2 my-sm-0" type="submit" style="background-color:#6f9a37;">Search</button>
+  </form>
+</nav>
+<div class="header">
+  <div class="container ">
+   <div class="row d-flex justify-content-between align-items-center flex-wrap">
+     <div class="col-5">
+       <i class="fa fa-envelope-o" style="font-size:20px;color:red">   </i>
+       <span class="ml-2"style="color:#fff;">Newsvolt@gmail.com</span>
+       <i class="fa fa-phone ml-4" style="font-size:20px;color:red"></i>
+       <span class="ml-2"style="color:#fff;">+1 (305) 1234-5678</span>
+     </div>
+
+
+
+     <div class=" col-lg-7 ">
+       <div class="  social-profile">
+
+
+       <!-- Facebook -->
+      <a href="#"> <i class="fab fa-facebook-f "></i></a>
+
+ <!-- Twitter -->
+          <a href="#"> <i class="fab fa-twitter"></i></a>
+
+ <!-- Google -->
+        <a href="#">  <i class="fab fa-google"></i></a>
+
+ <!-- Instagram -->
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+ <!-- Linkedin -->
+        <a href="#">  <i class="fab fa-linkedin-in"></i></a>
+
+ <!-- Pinterest -->
+           <a href="#"> <i class="fab fa-pinterest"></i></a>
+ </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><img style="width:100px;" src="https://newsvolt.electronthemes-ghost.com/content/images/2020/12/logo-light.svg" alt=""> </a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 align-items-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ELEMENTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TAGS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">MEMBERSHIP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+
+      <button class="btn  my-2 my-sm-0" type="submit"style="background-color:#6f9a37;">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row d-flex-justify-content-center">
+    <div class="col-lg-9">
+
+      <div class="breaking-news-section d-flex align-items-center">
+            <div class="breaking-headline">
+                Headlines
+            </div>
+          </div>
+
+          <div class="row"style="display: flex;flex-wrap: wrap;margin-right: -15px;  margin-left: -15px;">
+            <div class="col-lg-8">
+              <div class="featured-item"style="position:relative;">
+              <i class="fa fa-star" aria-hidden="true" style="color:	#FFA500; "></i>
+              <div class="feature-tag">
+                    <a href="">travel</a>
+                </div>
+                <div class="featured-posts-image" >
+                  <img src="1.jpg" alt="" style="width:100%;height:100%;">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="featured-item"style="position:relative;">
+                 <i class="fa fa-star" aria-hidden="true" style="color:	#FFA500; margin-left:10px;"></i>
+                 <div class="feature-tag">
+                    <a href="">travel</a>
+                </div>
+                <div class="featured-posts-image" >
+                  <img src="1.jpg" alt="" style="width:100%;height:100%;">
+                  </div>
+                </div>
+                <div class="featured-item"style="position:relative;">
+                  <i class="fa fa-star" aria-hidden="true" style="color:	#FFA500; margin-left:10px;"></i>
+
+                  <div class="feature-tag">
+                      <a href="">travel</a>
+                  </div>
+                  <div class="featured-posts-image" >
+                    <img src="1.jpg" alt="" style="width:100%;height:100%;">
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+
+    </div>
+
+  <div class="col-lg-3">
+    <div class="latest-post py-4">
+      <h4>Trending News</h4>
+      <div class="sidebar">
+        <div class="single-food-post single-latest-posts d-flex">
+       <div class="food-feature-image latest-posts">
+         <img src="5.jpg" alt="">
+       </div>
+     </div>
+      </div>
+      <div class="sidebar">
+        <div class="single-food-post single-latest-posts d-flex">
+       <div class="food-feature-image latest-posts">
+         <img src="5.jpg" alt="">
+       </div>
+     </div>
+      </div>
+      <div class="sidebar">
+        <div class="single-food-post single-latest-posts d-flex">
+       <div class="food-feature-image latest-posts">
+         <img src="5.jpg" alt="">
+       </div>
+     </div>
+      </div>
+      <div class="sidebar">
+        <div class="single-food-post single-latest-posts d-flex">
+       <div class="food-feature-image latest-posts">
+         <img src="5.jpg" alt="">
+       </div>
+     </div>
+      </div>
+      <div class="sidebar">
+        <div class="single-food-post single-latest-posts d-flex">
+       <div class="food-feature-image latest-posts">
+         <img src="5.jpg" alt="">
+       </div>
+     </div>
+      </div>
+    </div>
+  </div>
+
+      </div>
+      </div>
+
+
+      <div class="container  p-4">
+        <div class="row d-flex justify-content-center">
+
+
+        <h3 class=" text-center">DAILY UPDATE NEWS</h3>
+      </div>
+        </div>
+
+        <div class="container">
+          <div class="wrapper-content">
+
+
+          <div class="row mt-30"style="display: flex;flex-wrap: wrap;margin-right: -15px;  margin-left: -15px;">
+            <div class="col-lg-9">
+              <div class="row"style="display: flex;flex-wrap: wrap;margin-right: -15px;  margin-left: -15px;">
+                <div class="col-lg-4">
+                  <div class="daily">
+                    <div class="items "style="height: 300px;margin-bottom: 30px;">
+                      <div class="feature-tag">
+                          <a href="">travel</a>
+                      </div>
+                      <div class="image">
+                        <img src="3.jpg" alt=""style="width:100%;height:100%;">
+                      </div>
+
+                    </div>
+
+
+
+
+                  </div>
+                  <div class="daily">
+                    <div class="items" style="margin-top: 30px;">
+                      <div class="feature-tag">
+                          <a href="">travel</a>
+                      </div>
+                      <div class="image">
+                        <img src="3.jpg" alt=""style="width:100%;height:100%;">
+                      </div>
+
+                    </div>
+
+
+
+
+                  </div>
+
+                </div>
+
+                  <div class="col-lg-8 col-lg-6">
+                    <div class="news">
+                      <div class="update"style="position: relative;">
+                        <div class="single-news-item">
+                          <div class="feature-tag">
+                              <a href="">travel</a>
+                          </div>
+                          <div class="img2">
+                            <img src="4.jpg" alt=""style="width:100%; height:542px;">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-3">
+              <div class="daily">
+                <div class="items "style="height: 300px;margin-bottom: 30px;">
+                  <div class="feature-tag">
+                      <a href="">travel</a>
+                  </div>
+                  <div class="image">
+                    <img src="3.jpg" alt=""style="width:100%;height:100%;">
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+              <div class="daily">
+                <div class="items" style="margin-top: 30px;">
+                  <div class="feature-tag">
+                      <a href="">travel</a>
+                  </div>
+                  <div class="image">
+                    <img src="3.jpg" alt=""style="width:100%;height:100%;">
+                  </div>
+
+                </div>
+
+
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+          </div>
+
+          <div class="container "style="margin-top:80px;">
+            <div class="row ">
+              <div class="col-lg-3">
+                <div class="food d-flex mb-15">
+                  <div class="food-image">
+                    <img src="6.jpg" alt="">
+                  </div>
+                  <div class="food-post-title">
+                      <div class="post-meta">
+                        <span class="post-meta__date">
+                             21 Dec 2020
+                        </span>
+                       <span class="reading-time">
+                              2 min read
+                       </span>
+                      </div>
+                        <h6><a href="/the-birth-of-intuitive-fitness/">The Birth of Intuitive Fitness</a></h6>
+                 </div>
+
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="food d-flex mb-15">
+                  <div class="food-image">
+                    <img src="6.jpg" alt="">
+                  </div>
+                  <div class="food-post-title">
+                      <div class="post-meta">
+                        <span class="post-meta__date">
+                             21 Dec 2020
+                        </span>
+                       <span class="reading-time">
+                              2 min read
+                       </span>
+                      </div>
+                        <h6><a href="/the-birth-of-intuitive-fitness/">The Birth of Intuitive Fitness</a></h6>
+                 </div>
+
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="food d-flex mb-15">
+                  <div class="food-image">
+                    <img src="6.jpg" alt="">
+                  </div>
+                  <div class="food-post-title">
+                      <div class="post-meta">
+                        <span class="post-meta__date">
+                             21 Dec 2020
+                        </span>
+                       <span class="reading-time">
+                              2 min read
+                       </span>
+                      </div>
+                        <h6><a href="/the-birth-of-intuitive-fitness/">The Birth of Intuitive Fitness</a></h6>
+                 </div>
+
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="food d-flex mb-15">
+                  <div class="food-image">
+                    <img src="6.jpg" alt="">
+                  </div>
+                  <div class="food-post-title">
+                      <div class="post-meta">
+                        <span class="post-meta__date">
+                             21 Dec 2020
+                        </span>
+                       <span class="reading-time">
+                              2 min read
+                       </span>
+                      </div>
+                        <h6><a href="/the-birth-of-intuitive-fitness/">The Birth of Intuitive Fitness</a></h6>
+                 </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container  p-4">
+            <div class="row d-flex justify-content-center">
+
+
+            <h3 class=" text-center">SELECTED TOPICS</h3>
+          </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="single-video">
+                    <div class="update-image">
+                      <img src="7.jpg" alt="">
+                    </div>
+                    <div class="video-content">
+
+                      <div class="update-pub-post">
+                         <div class="post-meta">
+                             <span class="post-meta__date">
+                                18 Dec 2020
+                             </span>
+                              <span class="reading-time">
+                            2 min read
+                           </span>
+                       </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="single-video">
+                    <div class="update-image">
+                      <img src="7.jpg" alt="">
+                    </div>
+                    <div class="video-content">
+                      <div class="update-pub-post">
+                         <div class="post-meta">
+                             <span class="post-meta__date">
+                                18 Dec 2020
+                             </span>
+                              <span class="reading-time">
+                            2 min read
+                           </span>
+                       </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="single-video">
+                    <div class="update-image">
+                      <img src="7.jpg" alt="">
+                    </div>
+                    <div class="video-content">
+                      <div class="update-pub-post">
+                         <div class="post-meta">
+                             <span class="post-meta__date">
+                                18 Dec 2020
+                             </span>
+                              <span class="reading-time">
+                            2 min read
+                           </span>
+                       </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="single-video">
+                    <div class="update-image">
+                      <img src="7.jpg" alt="">
+                    </div>
+                    <div class="video-content">
+                      <div class="update-pub-post">
+                         <div class="post-meta">
+                             <span class="post-meta__date">
+                                18 Dec 2020
+                             </span>
+                              <span class="reading-time">
+                            2 min read
+                           </span>
+                       </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+  <!--Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+   integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous">
+ </script>
+  </body>
+
+  </html>
